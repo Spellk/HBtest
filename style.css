@@ -1,0 +1,44 @@
+body {
+  background-color: #7a5cfa;
+  width: 760px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 96px 98px 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.password-info {
+  font-size: 12px;
+  color: #888;
+}
+
+.assistive-text {
+  font-size: 12px;
+  color: #f00;
+  display: none;
+}
+
+.form-group {
+  margin-bottom: 32px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-check {
+  margin-bottom: 32px;
+}
+
+.btn {
+  width: 172px;
+  height: 56px;
+}

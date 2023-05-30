@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="dataForm">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" class="form-control" id="username" placeholder="Enter username" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter password" required />
+          <span class="password-info">Your password is between 4 and 12 characters.</span>
+        </div>
+        <div class="form-group">
+          <label for="textInput">Input Text Label</label>
+          <input type="text" class="form-control" id="textInput" placeholder="Type here" required />
+          <span class="assistive-text">Error message informing me of a problem</span>
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="rememberMe" />
+          <label class="form-check-label" for="rememberMe">Remember me</label>
+        </div>
+        <div class="form-group">
+          <label for="toggleSwitch">Off/On</label>
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="toggleSwitch" />
+            <label class="custom-control-label" for="toggleSwitch"></label>
+          </div>
+        </div>
+        <div class="form-group">
+          <div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="radioSelection"
+                id="radioOption1"
+                value="Option 1"
+                required
+              />
+              <label class="form-check-label" for="radioOption1">Radio selection 1</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="radioSelection" id="radioOption2" value="Option 2" />
+              <label class="form-check-label" for="radioOption2">Radio selection 2</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="radioSelection" id="radioOption3" value="Option 3" />
+              <label class="form-check-label" for="radioOption3">Radio selection 3</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="dropdownOptions">Dropdown title</label>
+          <select class="form-control" id="dropdownOptions" required>
+            <option>Dropdown option</option>
+            <option>Dropdown option 1</option>
+            <option>Dropdown option 2</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <div class="button-container">
+            <button type="button" class="btn btn-secondary" id="cancelButton">Cancel</button>
+            <button type="submit" class="btn btn-primary" id="nextButton" disabled>Next</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
